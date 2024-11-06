@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .containertop{
+            display: flex;
+            font-family: 
+            text-align: center;
+
+        }
+
+        .menusection{
+            background-color: blue;
+        }
+
+        .menusection ul li{
+            display: inline-block  ;
+            color: white;
+            padding-top: 30px;
+            margin: 20px;
+            font-size: 20px;
+        }
+
+        .sitenamesection h1{
+            text-align: left;
+            padding: 20px;
+            font-size: 45px;
+        }
+        .sitenamesection h2{
+            font-size: 12px;
+            text-align: left;
+            padding-left: 25px;
+            color: red;
+        }
+
+        .leftsection{
+            width: 50%;
+
+        }
+
+        .rightsection{
+            width: 50%;
+            color: yellow;
+        }
+
+        .yellowbackground{
+            height: 35px;
+            background-color: yellow;
+        }
+
+        .imagesection{
+            height: 200px;
+            background-repeat: no-repeat;
+            background-size: 33.3% 100%;
+            background-image: url(Spot\ Healing\ 05\ Fernando-reyes-unsplash.jpg) , url(Html/Practice/Content\ Aware\ Fill\ 02\ Alice-pasqual-unsplash.jpg) , url(Html/Practice/desktop-wallpaper-cool-3d-car-3d-car-racing\ -\ Copy.jpg);
+            background-position: left,center,right;
+        }
+
+        .maincontainer{
+            background-color: blue;
+            height: 60px;
+            
+        }
+
+        .maincontainer ul{
+            color: white;
+            display: flex;
+            
+            
+        }
+
+        .bluecontainer { 
+            height: 20px;
+            width: auto;
+            background-color: blue;
+            padding: 10px;
+        }
+
+        .whitecontainer h2{
+            color: white;
+            
+        }
+
+        .left1{
+            width: 50%;
+        }
+        
+        .right1{
+            width: 50%;
+        }
+
+        .column2{
+            display: flex;
+            height: 500px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .left {
+            width: 25%;
+
+            background-color: orangered;
+            padding: 30px;
+        }
+
+        .left h2 {
+            color: white;
+        }
+
+        .left ul{
+            padding-left: 40px;
+        }
+
+        .right{
+            width: 75%;
+            padding: 30px;
+        }
+
+        .right h2{
+            color: rgb(71, 71, 223);
+        }
+
+        .right ul {
+            padding-left: 40px;
+        }
+        .right a {
+            text-decoration: underline;
+            color: black    ;
+        }
+
+        .bluecontainer2{
+            height: 30px;
+            width: auto;
+            background-color: blue;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            line-height: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif   ;
+
+        }
+
+        span{
+                color: orange;
+            }
+
+        .drop{
+            display: none;
+            font-size: small;    
+            
+        }
+
+        .drop ul li{
+            display: block;
+            margin: 0px;
+            padding: 5px;
+            font-size: 15px;
+
+        }
+        .drop ul li a{ 
+            color: white;
+
+        }
+
+        .upper:hover .drop{
+            display: block;
+            position: absolute;
+            background-color: blue;
+        }
+
+
+        .seconddrop{
+            display:none
+
+        }
+
+        .seconddrop ul li{
+            display: block;
+            margin: 0px;
+            padding: 5px;
+            font-size: 15px;
+            text-align: left;
+            font-size: small;      
+        }
+
+        .Lower:hover .seconddrop{
+            display: block;
+            position: absolute;
+            background-color: blue;
+            
+        }
+        .seconddrop ul li a {
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            font-size: small;    
+        }
+      
+
+    </style>
+</head>
+<body>
+    <div class="containertop">
+        <div class="leftsection">
+            <div class="menusection">
+                <ul>
+                    <li class="Lower">Home
+                        <div class="seconddrop">
+                            <ul>    
+                                <li> <a href="Spot Healing 05 Fernando-reyes-unsplash.jpg">Home 1</a></li>
+                                <li> <a href="Spot Healing 05 Fernando-reyes-unsplash.jpg">Home 2</a></li>
+                                <li> <a href="Spot Healing 05 Fernando-reyes-unsplash.jpg">Home 3</a></li>
+                                <li> <a href="Spot Healing 05 Fernando-reyes-unsplash.jpg">Home 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="Lower">Service
+                        <div class="seconddrop">
+                            <ul>    
+                                <li><a href="Html/Practice/desktop-wallpaper-cool-3d-car-3d-car-racing - Copy.jpg">Service 1</a></li>
+                                <li>Service 2</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="Lower">About us
+                        <div class="seconddrop">
+                            <ul>    
+                                <li><a href="basic.html">About us 1</a> </li>
+                                <li>About us 2</li>
+                                <li>About us 3</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="Lower">Photo
+                        <div class="seconddrop">
+                            <ul>    
+                                <li> <a href="sudo classes.html">Photo 1</a></li>
+                                <li>Photo 2</li>
+                                <li>Photo 3</li>
+                                <li>Photo 4</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="upper">Article
+                        <div class="drop">
+                            <ul>
+                                <li> <a href="basic.html">Article 1</a></li>
+                                <li>Article 2</li>
+                                <li>Article 3</li>
+                                <li>Article 4</li>
+                                <li>Article 5</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="sitenamesection">
+                <h1>Your Site Name</h1>
+                <h2>This Space is available for slogan</h2>
+            </div>
+        </div>
+        <div class="rightsection">
+            <div class="yellowbackground"></div>
+            <div class="imagesection"></div>
+        </div>
+    </div>
+    <div class="bluecontainer"></div>
+<div class="column2">
+    <div class="left">
+        <h2>Website Add ons</h2><br>
+        <p>Lorem ipsum dolor sit allam autem qui laboriosam quam suscipit facere asperiores aliquid earum exercitationem inventore dicta fugit, quae excepturi eos ut.</p><br><br>
+        <ul>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+            <li>List 5</li>
+        </ul>
+    </div>
+    <div class="right">
+        <h2>Features of this CSS Personal/General Template</h2><br>
+        <ul>
+            <li>lorem ihsghd <span><a href="sudo classes.html">ihgi hiaz zuhi dantium</a>  ipsa vol</span> 9ijhz9g</li>
+            <li>lorem ihsghd ihgi hiaz zuhi dantium ipsa vol 9ijhz9g</li>
+            <li>lorem ihsghd ihgi hiaz zuhi dantium ipsa vol 9ijhz9g</li>
+            <li>lorem ihsghd ihgi hiaz zuhi dantium ipsa vol 9ijhz9g</li>
+            <li>lorem ihsghd ihgi hiaz zuhi <span>dantium ipsa vol 9ijhz9g</span></li>
+            <li>lorem ihsghd ihgi hiaz zuhi dantium ipsa vol 9ijhz9g</li>
+        </ul><br>
+        <H3 > <span>Buy Now </span> for Only 59$ <a href="http://127.0.0.1:5500/website3.html"> Add to Cart</a></H3><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga rerum unde debitis velit laborum saepe ea beatae, voluptatibus, illo quos odio laudantium ipsa voluptatum cum autem mollitia? Suscipit, deleniti fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus animi praesentium veniam officiis blanditiis recusandae quas at doloribus repellat dicta odit ea cumque doloremque nostrum tempora, qui repudiandae maxime eaque!</p>
+    </div>
+</div>
+<div class="bluecontainer2">
+    <h3>Copyright  wwww.google.com - All right Reserved </h3>
+</div>
+</body>
+</html>

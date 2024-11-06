@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #k{
+            background-color: black;
+        }
+        .cube{
+            transform-style: preserve-3d;
+            animation: cube 4s linear infinite;
+            height: 100px;
+            width: 100px;
+           margin: 30%;
+        }
+
+        .sd{
+            height: 100PX;
+            width: 100px;
+           
+            position: absolute;
+          
+          
+            
+        }
+
+        .side1{
+            transform: rotateY(90deg) translateZ(-50px);
+            background-color:rgb(20, 241, 0) ;
+        }
+        .side2{
+            transform: rotateY(90deg) translateZ(50px);
+            background-color:rgb(0, 191, 255) ;
+        }
+        .side3{
+            transform: rotatex(90deg) translateZ(50px);
+            background-color:rgb(230, 173, 173) ;
+        }
+        .side4{
+            transform: rotateX(90deg) translateZ(-50px);
+            background-color:rgb(255, 72, 0) ;
+        }
+        .side5{
+            transform:  translateZ(50px);
+            background-color:rgb(255, 0, 212) ;
+        }
+        .side6{
+            transform:  translateZ(-50px);
+            background-color:rgb(0, 26, 255) ;
+        }
+        @keyframes cube {
+            100%{
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+<div class="big">
+    <div class="cube">
+        <div class="side1 sd">l</div>
+        <div class="side2 sd">r</div>
+        <div class="side3 sd">t</div>
+        <div class="side4 sd">b</div>
+        <div class="side5 sd">f</div>
+        <div class="side6 sd">ba</div>
+    </div>
+</div>
+<div id="k">
+
+</div>
+</body>
+</html>

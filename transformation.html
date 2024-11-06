@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .big{
+            height:400px ;
+            width: 400px;
+            background-color: teal;
+        }
+        .sm{
+            height: 50px;
+            width: 50px;
+            background-color: orangered;
+            transition: 3s;
+        }
+        .big:hover .sm{
+            transform: translateX(350px);
+            transform: translateY(350px);
+            transform: translate(350px, 350px);
+
+            transform: rotateX(45deg);
+            transform: rotateY(45deg);
+            transform: rotate(45deg);
+
+            transform: scaleX(2);
+            transform: scaleY(2);
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="big">
+        <div class="sm"></div>
+    </div>
+</body>
+</html>
