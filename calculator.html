@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="calculator" border="1">
+            <input type="text">
+            <tr>
+                <td onclick="Allclear()">C</td>
+                <td onclick="num()">%</td>
+                <td onclick="del()">Del</td>
+                <td onclick="opr()">%</td>
+            </tr>
+            <tr>
+                <td onclick="num()">7</td>
+                <td onclick="num()">8</td>
+                <td onclick="num()">9</td>
+                <td onclick="opr()">*</td>
+            </tr>
+            <tr>
+                <td onclick="num()">4</td>
+                <td onclick="num()">5</td>
+                <td onclick="num()">6</td>
+                <td onclick="opr()">-</td>
+            </tr>
+            <tr>
+                <td onclick="num()">1</td>
+                <td onclick="num()">2</td>
+                <td onclick="num()">3</td>
+                <td onclick="opr()">+</td>
+            </tr>
+            <tr>
+                <td onclick="num()">0</td>
+                <td onclick="num()">00</td>
+                <td onclick="num()">.</td>
+                <td onclick="ans()">=</td>
+            </tr>
+
+        </table>
+    </div>
+  
+    
+</body>
+<script>
+    let input = document.querySelector ("input");
+
+
+    function num(){
+        input.value += event.target.innerHTML;
+    }
+    function opr(){
+        input.value += event.target.innerHTML;  
+    }
+    function ans(){
+        input.value = eval(input.value)
+    }
+    function Allclear(){
+        input.value = ''
+    }
+    function del(){
+        input.value = input.value.slice(0 , -1)
+    }
+    // let a = function(){
+
+
+    //     return ('hello')
+    // }
+
+    // console.log(a())
+
+//    let  list = ['a','c','d']
+
+//    list.forEach((v,i)=>{
+//     console.log( v, i)
+//    })
+
+let list = ['a', 'b', 'c' ,'d']
+list.forEach((v,i)=>{
+    console.log(v,i)
+})
+
+
+   
+
+
+
+    
+
+
+    
+
+</script>
+</html>

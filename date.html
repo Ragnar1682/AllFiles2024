@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+   <!-- 7 : 27 : 1 pm -->
+   
+
+    </div>
+    
+</body>
+<script>
+    
+    let div = document.querySelector("div")
+    // let heading2 = document.querySelector("h2")
+    // document.write(date.toString())
+    // document.write(date.getSeconds())
+
+    // console.log(Date.now())
+
+    // setInterval(()=>{
+    //     // let date = new Date()
+    //     // // document.write(date.getSeconds())
+    //     // heading.innerHTML = date.get() 
+    //     // heading2.innerHTML = date.toLocaleDateString() 
+
+
+    // },1000)
+
+
+    // setInterval(()=>{
+    //     let date = new Date()
+    //     let hour = date.getHours()
+    //     let min = date.getMinutes()
+    //     let sec = date.getSeconds()
+    //     sec = sec<10?"0"+sec:sec
+    //     min = min<10?"0"+min:min
+    //     hour = hour>12?hour-12:hour;
+    //     let time = hour +" : " + min +" : "+ sec;
+
+    //     div.innerHTML = time
+
+    // },1000)
+
+    setInterval(()=>{
+        let date = new Date()
+        let hours = date.getHours()
+        let min = date.getMinutes()
+        let sec = date.getSeconds()
+
+        hours = hours>12?hours-12:hours;
+        sec = sec<10?"0"+sec:sec;
+        
+
+        let time = hours + " : " + min + " : " + sec;
+        div.innerHTML = time
+
+    },1000)
+
+
+
+
+
+</script>
+</html>

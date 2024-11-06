@@ -5,68 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    table{
+        margin: 50px auto;
+
+    }
+    .error{
+        font-size: 12px;
+        color: red;
+        position: absolute auto
+        
+    }
+    .lengtherror{
+        font-size: 12px;
+        color: red;
+        position: absolute auto
+    }
+
+
+</style>
 <body>
     <form action="">
-
-         Name: <input type="text"> <br>
-         pno: <input type="number"> <br>
-
-         email: <input type="email"> <br>
-
-         pass: <input type="password"> <br>
-
-         dob: <input type="date"> <br>
-         gender: male <input type="radio">
-         female <input type="radio"> <br>
-         gender: male <input type="checkbox">
-         female <input type="checkbox"> <br>
-
-         upload : <input type="file"> <br>
-
-         feeback: <textarea name="" id="" cols="30" rows="5"></textarea> <br>
-
-         sates: <select name="" id="">
-
-            <option value="">Delhi</option>
-            <option value="">up</option>
-            <option value="">J&k</option>
-         </select> <br>
-
-         <input type="submit" value="Login">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="text" class="pass"></td>
+                <td><h2 class="error"></h2></td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td><input type="text" class="conPass"></td>
+                <td><h2 class="lengtherror"></h2></td>
+            </tr>
+            <tr>
+                <td><input type="Submit" name="" id="Submit">
+                </td>
+            </tr>
+        </table>
     </form>
-    <br>
-    -------------------------
-    <br>
-    Title : Form
-<br><br><br>v 
-    <form action="">
-        
-        Name: <input type="text"> <br> <br>
-        Ph No. : <input type="number" name="" id=""> <br><br>
-        Email: <input type="email"> <br><br>
-        Password: <input type="password"> <br><br>
-        Date of Birth: <input type="date"><br><br>
-        Gender: Male <input type="checkbox"> Female <input type="checkbox" name="" id=""> <br><br>
-        Upload: <input type="file"> <br><br>
-        Comment: <textarea name="" id="" cols="30" rows="3"></textarea> <br><br>
-        Country: <select name="" id="">
-            <option value="">Other</option>
-            <option value="">United States</option>
-            <option value="">Australia</option>
-            <option value="">United Kingdom</option>
-            <option value="">India</option>
-        </select><br><br>
-        <input type="Submit" name="" id="">
-</form>
     
-Practice Form
-
-
-----------------------------
-
-My Feedback Form 
-
-N
-
 </body>
-</html>
+<script>
+    let pass = document.querySelector(".pass")
+    let conpass = document.querySelector(".conPass")
+    let submit = document.querySelector("#Submit")
+    let error = document.querySelector(".error")
+    let lengthError = document.querySelector(".lengtherror")
+
+
+    function CheckEqual(){
+        if(pass.value == conpass.value){
+            error.innerHTML = ""
+            confirmEqual = true
+        }
+        if(pass.value != conpass.value){
+            error.innerHTML = "Password is Not Matched"
+            confirmEqual = false
+
+        }
+    }
+
+
+    function CheckLength(){
+        if(pass.value.length<8){
+            lengthError.innerHTML = "Password Should be Greater Than 8"
+            confirmLength = false
+
+            
+        }
+        else{
+            lengthError.innerHTML = " "
+            confirmLength = true
+
+
+        }
+    }
+
+
+    conpass.addEventListener("keyup",()=>{
+        CheckEqual();
+    })
+
+    pass.addEventListener("keyup",()=>{
+        CheckLength();
+
+    })
+
+    submit.addEventListener("Click",()=>{
+        confirmEqual = false
+        confirmLength = false
+
+        CheckEqual()
+        CheckLength()
+
+        if(!confirmEqual || !confirmLength){
+            event.preventDefault()
+        }
+       
+        
+    })
+    
+
+
+
+
+  
+
+
+
+</script>
+</html> 
+
+
+
+
+
+
+
+
+
+<!-- 
+// let pass = document.querySelector(".pass")
+// let conpass = document.querySelector(".conPass")
+// let submit = document.querySelector("#Submit")
+// let error = document.querySelector(".h2")
+// let lengthError = document.querySelector(".h1")
+
+// function checkEqual(){
+//     if(pass.value==conpass.value){
+//         error.innerHTML =""
+//         confirmEqual = true
+//     }
+//     if(pass.value!=conpass.value){
+//         error.innerHTML = "Confirm Password is Not Matched"
+//         confirmEqual = false
+//     }
+// }
+// function checkLength(){
+//     if(pass.value.length<8){
+//         lengthError.innerHTML = "Password should be greater than 8"
+//         confirmLength = false
+//     }   
+//     else{
+//         lengthError.innerHTML = ""
+//         confirmLength = true;
+//     }
+// }
+// conpass.addEventListener("keyup",()=>{
+//     checkEqual();
+    
+// })
+// pass.addEventListener("keyup",()=>{
+//     checkLength()
+// })
+
+// submit.addEventListener("click",()=>{
+//     confirmEqual = false;
+//     confirmLength = false;
+
+//     checkEqual()
+//     checkLength()
+//     if(!confirmEqual || !confirmLength){
+//         event.preventDefault()
+//     }
+// }) -->

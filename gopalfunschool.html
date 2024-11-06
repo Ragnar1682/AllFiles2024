@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gopal Fun School</title>
+    <style>
+        #firstHeading{
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+ 
+</body>
+<script>
+    let body = document.querySelector("body")
+
+    let container = document.createElement("div")
+    container.style.backgroundColor = "green"
+    container.style.margin = "5%"
+    // // container.id = "calculator"
+    // container.className = "calculator"
+    // container.setAttribute("onclick","calculator()")
+    // container.removeAttribute("class")
+    container.className = "Container"
+    body.appendChild(container)
+    
+    let header = document.createElement("div")
+    container.appendChild(header)
+    header.id = "header"
+
+    header.style.paddingTop = "2%"
+    header.style.margin = "3%"
+
+
+    let h1 = document.createElement("h1")
+    
+    header.appendChild(h1)
+    h1.innerHTML = "Gopal Fun School"
+    h1.addEventListener("mousedown", function(){
+        h1.id = "firstHeading"
+    })
+    h1.addEventListener("mouseup", function(){
+        h1.id = ""
+        
+    })
+
+    h1.style.backgroundColor = "yellow"
+    h1.style.fontSize = "50px"
+    h1.style.textAlign = "center"
+    h1.style.padding  = "2%"
+
+    let div = document.createElement("div")
+    div.className = "Bullet Point"
+    container.appendChild(div)
+
+    div.style.fontSize = "20px"
+    div.style.lineHeight = "2"
+    div.style.margin = "3%"
+    div.style.backgroundColor = "lightgreen"
+    
+    let ul = document.createElement("ul")
+    div.appendChild(ul)
+
+    let image = document.createElement("div")
+    image.className = "imagescontainer"
+    container.appendChild(image)
+
+    image.style.backgroundImage = "url('/Spot\ Healing\ 05\ Fernando-reyes-unsplash.jpg')"
+    image.style.height = "400px"
+    image.style.width = "94%"
+    image.style.margin = "3%"
+    image.style.backgroundRepeat = "no-repeat"
+    image.style.backgroundPosition = "100% 100%"
+
+
+
+    let text = document.createElement("p")
+    text.className = "lowertext"
+    container.appendChild(text)
+
+    text.innerHTML = "Lorem ipsum, dolor sit amet consectetur r sit amet consectetur adipisicing elLorem ipsum dolor sadipisicing iuhiuhue"
+    text.style.color = "white"
+    text.style.fontSize = " 28px"
+    text.style.textAlign = "center"
+
+    let footer = document.createElement("h3")
+    footer.className = "footer"
+    container.appendChild(footer)
+
+    footer.innerHTML = "Contact: 6798798797"
+    footer.style.textAlign = "center"
+    footer.style.backgroundColor = "black"
+    footer.style.color = "white"
+    footer.style.padding = "15px"
+    footer.style.fontSize = "30px"
+
+
+
+
+    function List(value){
+            let li = document.createElement("li");
+            ul.appendChild(li);
+            li.innerHTML = value
+        }
+
+    List("Lorem ipsum dolor sit amet consectetur adipisicing elLorem ipsum dolor sit amet consectetur adipisicing elLorem ipsum dolor sit amet consectetur adipisicing eli");
+    List("Lorem ipsum dolor sit amet consectetur adipisicing elLorem ipsum dolor sit amet consectetur adipisicing elLorem ipsum dolor sit amet consectetur adipisicing eli");
+    List("Lorem ipsum dolor sit amet consectetur adipisicing elLorem ipsum dolor sit amet consectetur adipisicing elLorem ipsum dolor sit amet consectetur adipisicing eli");
+
+
+
+    
+
+</script>
+
+</html>

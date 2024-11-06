@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let x = "hhello i World "
+    let obj = {
+
+    }
+
+    // for(i= 0;i<x.length;i++ ){
+    //     if(!obj[x[i]]){
+    //         obj[x[i]] = 1
+    //     }
+    //     else{
+    //         obj[x[i]]++;
+    //     }
+    // }
+
+    // for(i=0;i<x.length;i++){
+    //     if(!obj[x[i]]){
+    //         obj[x[i]] = 1
+    //     }
+    //     else{
+    //         obj[x[i]]++;
+    //     }
+    // }
+
+    // ----------------------------------
+
+    // for(i=0;i<x.length;i++){
+    //     if(!obj[x[i]]){
+    //         if(x[i]==" "){
+    //             if(obj["space"]){
+    //                 obj["space"]++;
+    //             }
+    //             else{
+    //                 obj["space"] = 1
+    //             }
+    //         }
+    //         else{
+    //             obj[x[i]] = 1
+    //         }
+    //     }
+    //     else{
+    //         obj[x[i]] ++;
+    //     }
+    // }
+
+    // ----------------------
+
+    for(i=0;i<x.length;i++){
+        if(!obj[x[i]]){
+            if(x[i]==" "){
+                if(obj["space"]){
+                    obj["space"]++
+                }
+                else{
+                    obj["space"] = 1
+                }
+            }
+            else{
+                obj[x[i]] = 1
+            }
+        }
+        else{
+            obj[x[i]]++;
+        }
+    }
+
+
+
+
+</script>
+</html>

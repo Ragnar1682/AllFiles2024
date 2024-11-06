@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .calculator{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="calculator" border="1">
+            <input type="text">
+            <tr>
+                <td class="Allclear">C</td>
+                <td>%</td>
+                <td class="del">del</td>
+                <td class="calc">%</td>
+            </tr>
+            <tr>
+                <td class="calcnumber">7</td>
+                <td class="calcnumber">8</td>
+                <td class="calcnumber">9</td>
+                <td class="calc">*</td>
+            </tr>
+            <tr>
+                <td class="calcnumber">4</td>
+                <td class="calcnumber">5</td>
+                <td class="calcnumber">6</td>
+                <td class="calc">-</td>
+            </tr>
+            <tr>
+                <td class="calcnumber">1</td>
+                <td class="calcnumber">2</td>
+                <td class="calcnumber">3</td>
+                <td class="calc">+</td>
+            </tr>
+            <tr>
+                <td class="calcnumber">00</td>
+                <td class="calcnumber">0</td>
+                <td class="calc">.</td>
+                <td class="ans">=</td>
+            </tr>
+        </table>
+    </div>  
+</body>
+<script>
+    let input = document.querySelector("input");
+    let table = document.querySelector(".calculator");
+    let number = document.querySelectorAll(".calcnumber")
+    let numerical = document.querySelectorAll(".calc")
+    let answer = document.querySelector(".ans")
+    let del = document.querySelector(".del")
+    let clear = document.querySelector(".Allclear")
+    // table.addEventListener("click",function(){
+    //     input.value += event.target.innerHTML
+    // })
+
+
+    // number.forEach((no)=>{
+    //     no.addEventListener("click",function(){
+    //         input.value += event.target.innerHTML
+    //     })
+    // })
+    // numerical.forEach((num)=>{
+    //     num.addEventListener("click", function(){
+    //         input.value += event.target.innerHTML
+    //     })
+    // })
+    // answer.addEventListener("click" , function(){
+    //     input.value = eval(input.value)
+    // })
+    // del.addEventListener("click", function(){
+    //     input.value = input.value.slice(0 , -1 )
+    // })
+    // clear.addEventListener("click" , function(){
+    //     input.value = ''
+    // })
+    number.forEach((no)=>{
+        no.addEventListener("click", function(){
+            input.value += event.target.innerHTML
+        })
+    })
+    numerical.forEach((num)=>{
+        num.addEventListener("click", function(){
+            input.value += event.target.innerHTML
+        })
+    })
+    answer.addEventListener("click", function(){
+        input.value =eval(input.value)
+        
+    })
+
+        
+    
+
+
+</script>
+
+</html>

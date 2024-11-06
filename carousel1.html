@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <style>
+        .box{
+            display: flex;
+            width: 500%;
+
+        }
+        .box .slider{
+            width: 500%;
+            animation: sliding 10s infinite linear ;
+        }
+        .box img {
+            height: 500px;
+            width: 100%;
+        }
+        @keyframes sliding {
+            0%{
+                transform: translate(0px);
+            }
+            15% , 25% {
+                transform: translate(-100%);
+            }
+
+            35% , 55% {
+                transform: translate(-200%);
+            }
+            65% , 75%{
+                transform: translate(-300%);
+            }
+            85% , 95%{
+                transform: translate(-400%);
+            }
+            
+        }
+    </style>    
+</head>
+<body>
+    <div class="section">
+        <div class="box">
+           <div class="slider"><img src="Bottle Island 04 Tim-marshall-unsplash.jpg" alt=""></div>
+           <div class="slider"><img src="Content Aware Fill 02 Alice-pasqual-unsplash.jpg" alt=""></div>
+           <div class="slider"><img src="Content Aware Fill 04 Joshua-earle-unsplash.jpg" alt=""></div>
+           <div class="slider"><img src="desktop-wallpaper-cool-3d-car-3d-car-racing - Copy.jpg" alt=""></div>
+           <div class="slider"><img src="Exmaple - Copy - Copy - Copy.jpg" alt=""></div>
+        </div>
+        
+    </div>
+</body>
+</html>

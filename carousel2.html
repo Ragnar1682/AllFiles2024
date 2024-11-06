@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <style>
+        .box{
+            display: flex;
+            width: 500%;
+
+
+        }
+        .box .slider{
+            width: 500%;
+            animation: sliding 30s infinite linear ;
+        }
+        .box img {
+            height: 500px;
+            width: 100%;
+        }
+        @keyframes sliding {
+            0%{
+                transform: translate(0px);
+            }
+            6% , 12% {
+                transform: translate(-100%);
+            }
+            18% , 24% {
+                transform: translate(-200%);
+            }
+            30% , 36%{
+                transform: translate(-300%);
+            }
+            42% , 48%{
+                transform: translate(-400%);
+            }
+            54% , 60%{
+                transform: translate(-300%);
+            }
+            66% , 72%{
+                transform: translate(-200%);
+            }   
+            78% , 84%{
+                transform: translate(-100%);
+            }
+            90% , 100%{
+                transform: translate(0%);
+            }
+        }
+    </style>    
+</head>
+<body>
+    <div class="section">
+        <div class="box">
+           <div class="slider"><img src="Bottle Island 04 Tim-marshall-unsplash.jpg" alt=""></div>
+           <div class="slider"><img src="Content Aware Fill 02 Alice-pasqual-unsplash.jpg" alt=""></div>
+           <div class="slider"><img src="Content Aware Fill 04 Joshua-earle-unsplash.jpg" alt=""></div>
+           <div class="slider"><img src="desktop-wallpaper-cool-3d-car-3d-car-racing - Copy.jpg" alt=""></div>
+           <div class="slider"><img src="Exmaple - Copy - Copy - Copy.jpg" alt=""></div>
+        </div>
+        
+    </div>
+</body>
+</html>

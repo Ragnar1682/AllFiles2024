@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .big{
+            height: 500px;
+            width: 500px;
+            background-color: black;
+            margin-left: 200px;  
+            margin-top: 200px;  
+
+        }
+
+        .small1{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            margin-left: 450px;
+            animation: cube1 linear 10s infinite;
+
+            
+
+
+        }
+        .small2{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(94, 255, 0);
+            margin-left: 400px;
+            margin-top: -50px;
+            animation: cube2 linear 10s infinite;
+
+
+        }
+        @keyframes cube1 {
+            10% {
+                transform: translate(250px);
+            }
+            30%{
+                transform: translate(250px,-550px);
+            }
+            50%{
+                transform: translate(-150px,-550px);
+            }
+
+
+
+            
+
+            
+        }
+        @keyframes cube2 {
+            10% {
+                transform: translate(-250px);
+            }
+            30%{
+                transform: translate(-250px,-550px);
+            }
+            50%{
+                transform: translate(250px,-550px);
+            }
+        }
+/* 
+        20%{
+                transform: translate(350px);
+                filter: hue-rotate(360deg);
+            }
+            50%{
+                transform: translate(350px, 350px);
+            }
+            70%{
+                transform: translate(0px, 350px);
+            } */
+    </style>
+</head>
+<body>
+    <div class="big"></div>
+    <div class="small1 "></div>
+    <div class="small2 "></div>
+</body>
+</html>

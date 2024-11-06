@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer1 {
+            height: 500px;
+            width: 500px;
+            background-color: rgb(0, 0, 0);
+            margin-top: 300px;
+            margin-left:300px;
+        }
+        .blank{
+            height: 500px;
+            width: 200px;
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            margin-left: -200px;
+
+
+
+        }
+        
+
+        .cube {
+            height: 40px;
+            width: 40px;
+            animation: cube 7s linear infinite;
+            position: absolute;
+            border-radius: 50%;
+
+        }
+
+        .inner1 {
+            background-color: rgb(255, 0, 0);
+            animation-delay: 100ms;
+        }
+
+        .inner2 {
+            background-color: rgb(21, 255, 0);
+            animation-delay: 300ms;
+
+        }
+
+        .inner3 {
+            background-color: rgb(0, 17, 255);
+            animation-delay: 500ms;
+
+        }
+
+        .inner4 {
+            background-color: rgb(229, 255, 0);
+            animation-delay: 700ms;
+
+        }
+        .cubefirst{
+            height: 500px;
+            width: 500px;
+            background-color: rgb(0, 0, 0);    
+        }
+        .outer2{
+            margin-left: 1000px;
+            margin-top: -500px;
+        }
+
+
+
+        @keyframes cube {
+            20% {
+                transform: translate(1160px);
+            }
+            40% {
+                transform: translate(1160px,460px);
+            }
+            60% {
+                transform: translate(0px,460px);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer1 cubefirst">
+        <div class="inner1 cube"></div>
+        <div class="inner2 cube"></div>
+        <div class="inner3 cube"></div>
+        <div class="inner4 cube"></div>
+    </div>
+    <div class="outer2 cubefirst">
+        <div class="blank"></div>
+
+    </div>
+
+</body>
+
+</html>

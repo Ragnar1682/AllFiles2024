@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .big{
+            height: 500px;
+            width: 500px;
+            background-color: aqua;
+            display: flex;
+            margin: 30%;
+            perspective: 1000px;
+         
+   
+        }
+        .small1{
+            height: 500px;
+            width: 250px;
+            background-color: black;
+            transition: 5s;
+        }
+        .small2{
+            height: 500px;
+            width: 250px;
+            background-color: rgb(255, 8, 8);
+            transition: 5s;
+        }
+
+    
+
+        .big:hover .small1{
+            
+              transform: rotateY(-180deg);
+              transform-origin: left;          
+
+        }
+        .big:hover .small2{
+            transform: rotateY(180deg);
+            transform-origin: right;
+
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="big">
+        <div class="small1"></div>
+        <div class="small2">
+            
+
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+
+

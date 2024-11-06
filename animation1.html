@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer1 {
+            height: 500px;
+            width: 500px;
+            background-color: rgb(0, 0, 0);
+            margin-top: 300px;
+            margin-left:300px;
+        }
+
+        .cube {
+            height: 40px;
+            width: 40px;
+            animation: cube 6s linear infinite;
+            position: absolute;
+            border-radius: 50%;
+
+        }
+
+        .inner1 {
+            background-color: rgb(255, 0, 0);
+            animation-delay: 100ms;
+            margin-top: 200px;
+        }
+
+        .inner2 {
+            background-color: rgb(21, 255, 0);
+            animation-delay: 300ms;
+            margin-top: 200px;
+
+        }
+
+        .inner3 {
+            background-color: rgb(0, 17, 255);
+            animation-delay: 500ms;
+            margin-top: 200px;
+
+        }
+
+        .inner4 {
+            background-color: rgb(229, 255, 0);
+            animation-delay: 700ms;
+            margin-top: 200px;
+
+        }
+        .cubefirst{
+            height: 500px;
+            width: 500px;
+            background-color: rgb(0, 0, 0);    
+        }
+        .outer2{
+            margin-left: 1000px;
+            margin-top: -500px;
+        }
+
+
+
+        @keyframes cube {
+            30% {
+                transform: translate(250px,-200px);
+            }
+            60% {
+                transform: translate(460px);
+            }
+            80% {
+                transform: translate(250px , 250px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer1 cubefirst">
+        <div class="inner1 cube"></div>
+        <div class="inner2 cube"></div>
+        <div class="inner3 cube"></div>
+        <div class="inner4 cube"></div>
+    </div>
+    <div class="outer2 cubefirst">
+
+    </div>
+
+</body>
+
+</html>

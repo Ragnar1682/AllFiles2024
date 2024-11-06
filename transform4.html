@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .up{
+            height: 500px;
+            width: 500px;
+            background-color: aqua;
+            display: flex;
+            perspective: 1000px;
+            margin-left: 300px;
+            margin-top: 300px;
+        }
+        .small1{
+            height: 500px;
+            width: 250px;
+            background-color: black;
+            transition: 5s;
+        }
+        .small2{
+            height: 500px;
+            width: 250px;
+            background-color: rgb(255, 8, 8);
+            transition: 5s;
+        }
+        .up:hover .small1{
+            transform: rotateX(180deg);
+            transform-origin: top;
+
+        }
+        .up:hover .small2{
+            transform: rotateX(180deg);
+            transform-origin: top;
+        }
+        .down{
+            height: 500px;
+            width: 500px;
+            background-color: aqua;
+            display: flex;
+            perspective: 1000px;
+            margin-left: 300px;
+            margin-top: 200px;  
+        }
+        .small3{
+            height: 500px;
+            width: 250px;
+            background-color: black;
+            transition: 5s;
+        }
+        .small4{
+            height: 500px;
+            width: 250px;
+            background-color: rgb(255, 8, 8);
+            transition: 5s;
+        }
+        .down:hover .small3{
+            transform: rotateX(-180deg);
+            transform-origin: bottom;
+
+        }
+        .down:hover .small4{
+            transform: rotateX(-180deg);
+            transform-origin: bottom;
+        }
+        .both{
+            height: 500px;
+            width: 500px;
+            background-color: aqua;
+            perspective: 1000px;
+            margin-left: 300px;
+            margin-top: 300px;
+        }
+        .small5{
+            height: 250px;
+            width: 500px;
+            background-color: rgb(0, 0, 0);
+            transition: 5s;
+        }
+        .small6{
+            height: 250px;
+            width: 500px;
+            background-color: rgb(255, 8, 8);
+            transition: 5s;
+        }
+        .both:hover .small5{
+            transform: rotatex(180deg);
+            transform-origin: top;
+        }
+        .both:hover .small6{
+            transform: rotatex(-180deg);
+            transform-origin: bottom;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="up">
+        <div class="small1"></div>
+        <div class="small2"></div>
+    </div>
+    <div class="down">
+        <div class="small3"></div>
+        <div class="small4"></div>
+    </div>
+    <div class="both">
+        <div class="small5"></div>
+        <div class="small6"></div>
+    </div>
+    <div class="bothside">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+    </div> 
+</body>
+</html>

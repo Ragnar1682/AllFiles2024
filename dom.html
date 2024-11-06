@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        // let body = document.querySelector("body")
+        // let ul = document.createElement("ul")
+        // let li = document.createElement("li");
+        // let li1 = document.createElement("li");
+        // li.innerHTML = "list 1"
+        // li1.innerHTML = "list 2"
+        // body.appendChild(ul)
+        // ul.appendChild(li)
+        // ul.appendChild(li1)
+
+        let body = document.querySelector("body")
+        let ul = document.createElement("ul")
+        body.appendChild(ul)
+
+        function printList(value){
+            let li = document.createElement("li");
+            ul.appendChild(li);
+            li.innerHTML = value
+        }
+        printList("firsts")
+        printList("javascript");
+        printList("react");
+
+
+
+    </script>
+</html>

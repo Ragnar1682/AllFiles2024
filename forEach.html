@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <hr>
+</body>
+<script>
+    let div = document.querySelectorAll("div")
+
+    for(let i =0;i<=10;i++){
+        console.log(i)
+        console.log("123")
+    }
+    console.log("outside")
+
+
+    for(let i =0;i<div.length;i++){
+        console.log(div[i])
+
+    }
+
+
+    div.forEach((item,index,arr)=>{
+        console.log(item,index)
+        console.log(arr)
+    })
+
+
+    for(let i = 1;i<=10;i++){
+        console.log(i*2)
+    }
+
+    let arr = ["one", "Two", "three" , "four" ,"five"]
+    let color = ["red", "Blue", "Green" , "yellow", "pink"]
+
+
+
+    arr.forEach((item,index,arr)=>{
+        console.log(item,index,arr)
+    })
+    
+
+    color.forEach((item,index,arr)=>{
+        console.log(item)
+        console.log(index)
+        console.log(arr)
+    })
+
+    for(let i = 1;i<=10;i++){
+        console.log(i*3)
+    }
+    for(let i = 1;i<=10;i++){
+        console.log(i*4)
+    }
+    for(let i = 1;i<=10;i++){
+        console.log(i*9)
+    }
+
+
+
+
+</script>
+</html>
